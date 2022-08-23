@@ -1,1 +1,33 @@
-<p>nav works!</p>
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">account_circle</i>
+                Galaria
+            </a>
+
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">person</i>
+                Dados galaticos
+            </a>
+
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">code</i>
+                Source API
+            </a>
+        </mat-nav-list>
+     </mat-drawer>
+  
+    <div class="sidenav-content">
+      <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
+        <mat-icon class="mat-18">menu</mat-icon>
+      </button>
+    </div>
+  
+  </mat-drawer-container>
+  
