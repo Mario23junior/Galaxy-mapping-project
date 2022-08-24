@@ -1,5 +1,5 @@
 .container {
-   height: 100%;   
+    height: 100%;
 }
 
 .sidenav {
@@ -9,8 +9,9 @@
 
 img {
     width: 100%;
-    height: 9rem;
-    margin: 1rem auto -1rem auto;
+    margin: 4rem auto -1rem auto;
+    margin-top: 1rem;
+    padding: -4rem 8%;
 }
 
 .sidenav a {
@@ -18,10 +19,10 @@ img {
 }
 
 .sidenav i {
-   margin-right: 1rem;
+    margin-right: 1rem;
 }
 
 .menu {
     margin: 1rem 0 0 1rem;
-    color:white;
- }
+    color: white;
+}
