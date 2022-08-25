@@ -1,3 +1,8 @@
+<mat-card-header>
+    <mat-card-title>Dados observacionais</mat-card-title>
+    <mat-card-subtitle>Tem como objetivo o processo de coleta e organizar os dados, para monitorar um processo ou
+        fenômeno.</mat-card-subtitle>
+</mat-card-header>
 <table mat-table [dataSource]="galaxias" class="mat-elevation-z8" matSort matSortActive="posteddate"
     matSortDirection="asc">
 
@@ -6,19 +11,18 @@
         <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
     </ng-container>
 
-    <!-- Name Column -->
     <ng-container matColumnDef="constelacao">
         <th mat-header-cell *matHeaderCellDef>Constelação </th>
         <td mat-cell *matCellDef="let element"> {{element.constelacao}} </td>
     </ng-container>
 
-    <!-- Weight Column -->
+    
     <ng-container matColumnDef="declinacao">
         <th mat-header-cell *matHeaderCellDef>Declinação </th>
         <td mat-cell *matCellDef="let element"> {{element.declinacao}} </td>
     </ng-container>
 
-    <!-- Symbol Column -->
+    
     <ng-container matColumnDef="distancia">
         <th mat-header-cell *matHeaderCellDef>Distancia </th>
         <td mat-cell *matCellDef="let element"> {{element.distancia}} </td>
@@ -28,4 +32,3 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
-
