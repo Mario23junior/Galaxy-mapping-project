@@ -26,3 +26,12 @@ img {
     margin: 1rem 0 0 1rem;
     color: white;
 }
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: 2rem;
+     text-align: center;
+    align-items: center;
+
+  }
+  
