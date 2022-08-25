@@ -67,6 +67,7 @@ import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.compon
     MatIconModule,
     MatListModule,
     MatCardModule,
+    
 
   ],
   providers: [],
