@@ -31,6 +31,7 @@ import { MatCardModule } from '@angular/material/card';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
+import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.component';
  
 // Componentes do projeto
 
@@ -39,7 +40,8 @@ import { HeaderComponent } from './components/header/header.component';
     AppComponent,
     NavComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    GalaxyListComponent
    ],
   imports: [
     BrowserModule,
