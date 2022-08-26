@@ -32,7 +32,9 @@ export class GalaxyListComponent implements OnInit {
     }
   ];
 
-  displayedColumns = ['nome', 'constelacao', 'declinacao', 'distancia']
+  displayedObserveColumns = ['nome', 'constelacao', 'dimensoes', 'distancia']
+  displayedCaracteColumns = ['raio', 'magnitude', 'massa', 'estrelas']
+  displayedCSensorEspecColumns = ['rotacao', 'declinacao', 'IdadeEstimada', 'coordenadas']
 
   constructor() {
   }
