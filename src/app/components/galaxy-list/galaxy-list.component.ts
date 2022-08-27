@@ -12,7 +12,6 @@ export class GalaxyListComponent implements OnInit {
 
   galaxias: Observable<Galaxias[]>;
    
-
   displayedObserveColumns = ['nome', 'constelacao', 'dimensoes', 'distancia']
   displayedCaracteColumns = ['raio', 'magnitude', 'massa', 'estrelas']
   displayedCSensorEspecColumns = ['rotacao', 'declinacao', 'IdadeEstimada', 'coordenadas']
