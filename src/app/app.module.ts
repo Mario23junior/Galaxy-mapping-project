@@ -28,6 +28,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatSortModule } from '@angular/material/sort';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 // componentes internos
@@ -76,7 +78,9 @@ import { GalaryGalaxyComponent } from './components/galary-galaxy/galary-galaxy.
     MatCardModule,
     MatProgressSpinnerModule,
     MatDialogModule,
- 
+    MatSortModule,
+    MatGridListModule
+
 
 
   ],
