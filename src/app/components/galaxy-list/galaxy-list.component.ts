@@ -36,8 +36,6 @@ export class GalaxyListComponent implements OnInit {
       });
   }
 
-
-
   ngOnInit(): void {
   }
 
