@@ -36,6 +36,12 @@ table {
     vertical-align: middle;
   }
 
+  .limitCaracteris {
+    max-width: 5ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+ }
 
 @media (max-width: 320px) {
   table {
