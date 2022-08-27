@@ -37,7 +37,7 @@ table {
 }
 
 .limitCaracteris {
-  max-width: 5ch;
+  max-width: 7ch;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

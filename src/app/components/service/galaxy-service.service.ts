@@ -8,8 +8,7 @@ import { Galaxias } from 'src/app/model/galaxias';
 })
 export class GalaxyServiceService {
   
-  private host:string = "http://localhost:8080"
-  private readonly API = `${this.host}/project/api/galaxy/`
+   private readonly API = `/project/api/galaxy/`
 
   constructor(private httpClient: HttpClient) {}
 
@@ -17,7 +16,7 @@ export class GalaxyServiceService {
     return this.httpClient.get<Galaxias[]>(this.API)
     .pipe(
       first(),
-      delay(5000),
+      delay(1200),
       tap(galaxiasList => console.log(galaxiasList))
     )
   }
