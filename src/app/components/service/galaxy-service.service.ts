@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { first, Observable, take, tap } from 'rxjs';
+import { delay, first, Observable, take, tap } from 'rxjs';
 import { Galaxias } from 'src/app/model/galaxias';
 
 @Injectable({
@@ -15,6 +15,7 @@ export class GalaxyServiceService {
     return this.httpClient.get<Galaxias[]>(this.API)
     .pipe(
       first(),
+      delay(15000),
       tap(galaxiasList => console.log(galaxiasList))
     )
   }

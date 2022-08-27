@@ -26,13 +26,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 
 // componentes internos
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.component';
- 
+
 // Componentes do projeto
 
 @NgModule({
@@ -42,7 +44,7 @@ import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.compon
     HomeComponent,
     HeaderComponent,
     GalaxyListComponent
-   ],
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -67,7 +69,8 @@ import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.compon
     MatIconModule,
     MatListModule,
     MatCardModule,
-    
+    MatProgressSpinnerModule
+
 
   ],
   providers: [],

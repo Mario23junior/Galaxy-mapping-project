@@ -10,15 +10,17 @@ import { GalaxyServiceService } from '../service/galaxy-service.service';
 })
 export class GalaxyListComponent implements OnInit {
 
-  galaxias: Observable<Galaxias[]>;
+  galaxias$: Observable<Galaxias[]>;
    
   displayedObserveColumns = ['nome', 'constelacao', 'dimensoes', 'distancia']
   displayedCaracteColumns = ['raio', 'magnitude', 'massa', 'estrelas']
   displayedCSensorEspecColumns = ['rotacao', 'declinacao', 'IdadeEstimada', 'coordenadas']
 
   constructor(private galaxiService: GalaxyServiceService) {
-     this.galaxias = this.galaxiService.listAll()
+     this.galaxias$ = this.galaxiService.listAll()
   }
+
+  
 
   ngOnInit(): void {
   }
