@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Galaxias } from 'src/app/model/galaxias';
 import { GalaxyServiceService } from '../service/galaxy-service.service';
 
@@ -9,8 +10,8 @@ import { GalaxyServiceService } from '../service/galaxy-service.service';
 })
 export class GalaxyListComponent implements OnInit {
 
-  galaxias: Galaxias[] = []
-  
+  galaxias: Observable<Galaxias[]>;
+   
 
   displayedObserveColumns = ['nome', 'constelacao', 'dimensoes', 'distancia']
   displayedCaracteColumns = ['raio', 'magnitude', 'massa', 'estrelas']
