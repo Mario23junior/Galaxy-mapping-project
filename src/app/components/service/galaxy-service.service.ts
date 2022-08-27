@@ -7,8 +7,10 @@ import { Galaxias } from 'src/app/model/galaxias';
   providedIn: 'root'
 })
 export class GalaxyServiceService {
+  
+  private host:string = "http://localhost:8080"
+  private readonly API = `${this.host}/project/api/galaxy/`
 
-  private readonly API = "/assets/bd.json"
   constructor(private httpClient: HttpClient) {}
 
   listAll() {
