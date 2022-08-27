@@ -27,6 +27,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 
 // componentes internos
@@ -34,6 +35,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.component';
+import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
 
 // Componentes do projeto
 
@@ -43,7 +45,8 @@ import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.compon
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    GalaxyListComponent
+    GalaxyListComponent,
+    ErrorDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +72,9 @@ import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.compon
     MatIconModule,
     MatListModule,
     MatCardModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatDialogModule,
+ 
 
 
   ],

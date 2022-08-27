@@ -8,14 +8,14 @@ import { Galaxias } from 'src/app/model/galaxias';
 })
 export class GalaxyServiceService {
 
-  private readonly API = "/assets/bd.json"
+  private readonly API = "/assets/b2d.json"
   constructor(private httpClient: HttpClient) {}
 
   listAll() {
     return this.httpClient.get<Galaxias[]>(this.API)
     .pipe(
       first(),
-      delay(15000),
+      delay(5000),
       tap(galaxiasList => console.log(galaxiasList))
     )
   }
