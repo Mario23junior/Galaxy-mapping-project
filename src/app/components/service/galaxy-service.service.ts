@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Galaxias } from 'src/app/model/galaxias';
 
@@ -6,9 +7,11 @@ import { Galaxias } from 'src/app/model/galaxias';
 })
 export class GalaxyServiceService {
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) {
+    
+   }
 
-  listAll ():Galaxias[] {
+  listAll(): Galaxias[] {
     return [
       {
         id: 1, nome: 'Andromeda', constelacao: 'Andromeda',
@@ -42,7 +45,7 @@ export class GalaxyServiceService {
         coordenadas: '233mk23', descricao: '2e32mmad,ceekkr', estrelas: 2, IdadeEstimada: 10011010,
         magnitude: 3.81, dimensoes: 232.323, urlImg: 'exemplimg', raio: 110.0
       }
-      
+
     ];
   }
 }
