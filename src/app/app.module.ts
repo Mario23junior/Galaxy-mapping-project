@@ -36,6 +36,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.component';
 import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
+import { GalaryGalaxyComponent } from './components/galary-galaxy/galary-galaxy.component';
 
 // Componentes do projeto
 
@@ -46,7 +47,8 @@ import { ErrorDialogComponent } from './components/error-dialog/error-dialog.com
     HomeComponent,
     HeaderComponent,
     GalaxyListComponent,
-    ErrorDialogComponent
+    ErrorDialogComponent,
+    GalaryGalaxyComponent
   ],
   imports: [
     BrowserModule,
