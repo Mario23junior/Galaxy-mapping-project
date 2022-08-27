@@ -2,9 +2,10 @@
 <mat-card>
     <mat-card-header>
         <mat-card-title>Dados observacionais</mat-card-title>
+        <div mat-card-avatar class="avatar-img-1"></div>
         <mat-card-subtitle>Tem como objetivo o processo de coleta e organizar os dados, para monitorar um processo ou
             fenômeno.</mat-card-subtitle>
-    </mat-card-header>
+        </mat-card-header>
 
     <div *ngIf="galaxias$ | async as galaxias; else loadingTemplet">
         <table mat-table [dataSource]="galaxias" class="mat-elevation-z8" matSort matSortActive="posteddate"
@@ -51,6 +52,7 @@
 <mat-card>
     <mat-card-header>
         <mat-card-title>Caracteristicas Físicas</mat-card-title>
+        <div mat-card-avatar class="avatar-img-2"></div>
         <mat-card-subtitle>Dados físicos sobre galaxias e galáxias e estruturas formadas por milhares a trilhões de
             estrelas, poeira, gases e matéria escura.</mat-card-subtitle>
     </mat-card-header>
@@ -91,12 +93,12 @@
 </mat-card>
 
 
-
 <br><br>
 
 <mat-card>
     <mat-card-header>
         <mat-card-title>Dados de espectrómetro sensorial</mat-card-title>
+        <div mat-card-avatar class="avatar-img-3"></div>
         <mat-card-subtitle> Os dados capturados pelos sensores estão os Coarse Sun Sensors,
             que garantem que o telescópio não apontará mais de 50 graus na
             direção do Sol.
@@ -134,5 +136,5 @@
                 <mat-spinner value="10" strokeWidth="3" diameter=120></mat-spinner>
             </div>
         </ng-template>
-<mat-card>
-</mat-card>
+        <mat-card>
+        </mat-card>

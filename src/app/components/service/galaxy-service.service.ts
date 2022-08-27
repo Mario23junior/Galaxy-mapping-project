@@ -8,7 +8,7 @@ import { Galaxias } from 'src/app/model/galaxias';
 })
 export class GalaxyServiceService {
 
-  private readonly API = "/assets/b2d.json"
+  private readonly API = "/assets/bd.json"
   constructor(private httpClient: HttpClient) {}
 
   listAll() {

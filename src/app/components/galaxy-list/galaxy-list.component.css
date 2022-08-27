@@ -50,6 +50,22 @@ table {
   padding: 20px;
 }
 
+ 
+.avatar-img-1 {
+  background-image: url('src/assets/img/telescope.png');
+  background-size: cover;
+}
+
+.avatar-img-2 {
+  background-image: url('src/assets/img/science.png');
+  background-size: cover;
+}
+
+.avatar-img-3 {
+  background-image: url('src/assets/img/sensor.png');
+  background-size: cover;
+}
+
 @media (max-width: 320px) {
   table {
     width: 21rem;
