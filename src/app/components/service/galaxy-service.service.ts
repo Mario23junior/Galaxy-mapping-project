@@ -7,8 +7,9 @@ import { Galaxias } from 'src/app/model/galaxias';
   providedIn: 'root'
 })
 export class GalaxyServiceService {
-  
-   private readonly API = `/project/api/galaxy/`
+
+  private baseUrl = `http://localhost:8080`
+  private readonly API = `/project/api/galaxy/`
 
   constructor(private httpClient: HttpClient) {}
 
@@ -20,4 +21,9 @@ export class GalaxyServiceService {
       tap(galaxiasList => console.log(galaxiasList))
     )
   }
+
+  findById(id: any):Observable<Galaxias> {
+    return this.httpClient.get<Galaxias>(`${this.API}${id}`)
+  }
+
 }

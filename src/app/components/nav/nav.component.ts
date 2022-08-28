@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Galaxias } from 'src/app/model/galaxias';
 
 @Component({
   selector: 'app-nav',
@@ -10,8 +11,12 @@ export class NavComponent implements OnInit {
 
   private router:Router
 
+  private galaxias!: Galaxias;
+
+
   constructor(router:Router) {
     this.router = router
+    this.galaxias = this.galaxias
    }
 
   ngOnInit(): void {
