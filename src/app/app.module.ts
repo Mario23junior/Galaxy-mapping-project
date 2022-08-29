@@ -40,6 +40,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.component';
 import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
 import { GalaryGalaxyComponent } from './components/galary-galaxy/galary-galaxy.component';
+import { BlackHoleComponent } from './components/black-hole/black-hole.component';
  
  
 
@@ -53,7 +54,8 @@ import { GalaryGalaxyComponent } from './components/galary-galaxy/galary-galaxy.
     HeaderComponent,
     GalaxyListComponent,
     ErrorDialogComponent,
-    GalaryGalaxyComponent
+    GalaryGalaxyComponent,
+    BlackHoleComponent
    ],
   
   imports: [
