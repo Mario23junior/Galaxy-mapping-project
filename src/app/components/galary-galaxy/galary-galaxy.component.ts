@@ -33,8 +33,10 @@ export class GalaryGalaxyComponent implements OnInit {
         data: erroMesg
       });
   }
+  
 
   ngOnInit(): void {
+    
   }
   
 }
