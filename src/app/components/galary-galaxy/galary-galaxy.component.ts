@@ -36,4 +36,5 @@ export class GalaryGalaxyComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 }

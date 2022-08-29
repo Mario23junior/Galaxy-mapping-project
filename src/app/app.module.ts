@@ -32,7 +32,6 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FormGroup } from '@angular/forms';
 
- 
 
 // componentes internos
 import { NavComponent } from './components/nav/nav.component';
@@ -41,10 +40,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.component';
 import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
 import { GalaryGalaxyComponent } from './components/galary-galaxy/galary-galaxy.component';
+import { ZoomModule } from 'angular-zoom';
+
  
 
 // Componentes do projeto
-
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +55,8 @@ import { GalaryGalaxyComponent } from './components/galary-galaxy/galary-galaxy.
     GalaxyListComponent,
     ErrorDialogComponent,
     GalaryGalaxyComponent
-  ],
+   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,

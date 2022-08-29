@@ -20,6 +20,17 @@ mat-card-title {
 }
 
 .avatar-galaxy {
-  background-image: url('src/assets/img/galaxy.png');
+  background-image: url('src/assets/img/galaxy-icon.png');
   background-size: cover;
 }
+
+mat-card-content {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+/* configuração de zoom */
