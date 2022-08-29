@@ -40,8 +40,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.component';
 import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
 import { GalaryGalaxyComponent } from './components/galary-galaxy/galary-galaxy.component';
-import { ZoomModule } from 'angular-zoom';
-
+ 
  
 
 // Componentes do projeto
