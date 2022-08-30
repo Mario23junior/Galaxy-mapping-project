@@ -41,11 +41,13 @@ import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.compon
 import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
 import { GalaryGalaxyComponent } from './components/galary-galaxy/galary-galaxy.component';
 import { BlackHoleComponent } from './components/black-hole/black-hole.component';
- 
- 
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatTabsModule } from '@angular/material/tabs';
+
+
 
 // Componentes do projeto
- 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,8 +58,8 @@ import { BlackHoleComponent } from './components/black-hole/black-hole.component
     ErrorDialogComponent,
     GalaryGalaxyComponent,
     BlackHoleComponent
-   ],
-  
+  ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -86,7 +88,10 @@ import { BlackHoleComponent } from './components/black-hole/black-hole.component
     MatDialogModule,
     MatSortModule,
     MatGridListModule,
-    FormsModule
+    FormsModule,
+    MatButtonToggleModule,
+    MatTabsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

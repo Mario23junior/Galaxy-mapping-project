@@ -1,0 +1,19 @@
+img {
+    border-radius: 1rem;
+}
+
+mat-tab {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+mat-ripple,
+mat-tab-label,
+mat-focus-indicator,
+mat-tab-label,
+ng-star-inserted {
+    opacity: 1;
+}
