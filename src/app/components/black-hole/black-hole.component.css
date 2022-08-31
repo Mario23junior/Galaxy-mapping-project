@@ -17,3 +17,13 @@ mat-tab-label,
 ng-star-inserted {
     opacity: 1;
 }
+
+.limitCaracteris {
+    max-width: 7ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+ 
+ 

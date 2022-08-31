@@ -1,7 +1,11 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-
+import { MatDialog } from '@angular/material/dialog';
+import { catchError, Observable } from 'rxjs';
+import { blackHoles } from 'src/app/model/blackHole';
+import { ErrorDialogComponent } from '../error-dialog/error-dialog.component';
+import { BlackServiceService } from '../service/black-service.service';
 
 
 @Component({
@@ -17,13 +21,31 @@ import { FormControl } from '@angular/forms';
     ])
   ]
 })
+
 export class BlackHoleComponent implements OnInit {
 
-  constructor() { }
+  blackHoles$: Observable<blackHoles[]>;
 
-  fontStyleControl = new FormControl('https://chandra.si.edu/photo/2022/h1821/h1821_w55.jpg');
-  fontStyle?: string;
 
+  displayedObserveColumns = ['nome']
+
+  constructor(private blackHoleService: BlackServiceService,
+    public dialog: MatDialog
+  ) {
+    this.blackHoles$ = this.blackHoleService.listAll()
+      .pipe(
+        catchError(error => {
+          this.onError('Erro ao acessar serviço de buracos negros,Por favor tente mais uma vez mais')
+          return ([])
+        })
+      )
+  }
+
+  onError(erroMesg: string) {
+    this.dialog.open(ErrorDialogComponent, {
+      data: erroMesg
+    });
+  }
   ngOnInit(): void {
   }
 
