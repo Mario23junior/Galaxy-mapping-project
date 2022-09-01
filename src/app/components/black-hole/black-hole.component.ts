@@ -27,7 +27,7 @@ export class BlackHoleComponent implements OnInit {
   blackHoles$: Observable<blackHoles[]>;
 
 
-  displayedObserveColumns = ['nome']
+  displayedBlacHoleColumns = ['nome']
 
   constructor(private blackHoleService: BlackServiceService,
     public dialog: MatDialog
@@ -49,4 +49,7 @@ export class BlackHoleComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  fontStyleControl = new FormControl('');
+  fontStyle?: string;
+  
 }

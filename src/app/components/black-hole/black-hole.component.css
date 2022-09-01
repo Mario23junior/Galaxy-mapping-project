@@ -2,7 +2,7 @@ img {
     border-radius: 1rem;
 }
 
-mat-tab {
+ mat-tab {
     width: 100%;
     text-align: center;
     align-items: center;
@@ -23,7 +23,15 @@ ng-star-inserted {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
+}
 
- 
- 
+.example-stretched-tabs {
+    max-width: 800px;
+}
+
+.loading-spinner {
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+ }
