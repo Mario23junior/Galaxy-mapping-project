@@ -2,14 +2,16 @@
 <mat-card>
     <ng-container matColumnDef="nome">
         <mat-card-header>
-            <mat-card-title>Catalogação de galaxias</mat-card-title>
+            <mat-card-title>Mapeamento de Buraco Negros</mat-card-title>
             <div mat-card-avatar class="avatar-galaxy"></div>
-            <mat-card-subtitle>Catálogos e atlas de galáxias
-                recursos na internet
-                observatórios virtuais
-                coordenadas
-                nomes das galáxias
-                unidades úteis</mat-card-subtitle>
+            <mat-card-subtitle>Basicamento quando uma estrela fica sem combustível nuclear, ela entra em colapso. Se o núcleo, ou
+                região central, da estrela tiver uma massa maior que três sóis, nenhuma força nuclear conhecida pode
+                impedir que o núcleo forme uma deformação gravitacional profunda no espaço chamada buraco negro.
+                Um buraco negro não tem uma superfície no sentido usual da palavra. Existe simplesmente uma região, ou
+                limite, no espaço ao redor de um buraco negro além do qual não podemos ver. Esse limite é chamado de
+                horizonte de eventos. O raio do horizonte de eventos (proporcional à massa) é muito pequeno, apenas 30
+                quilômetros para um buraco negro não giratório com a massa de 10 sóis.
+            </mat-card-subtitle>
         </mat-card-header>
         <div *ngIf="blackHoles$ | async as blackHoles; else loadingTemplet">
             <table mat-table [dataSource]="blackHoles" class="mat-elevation-z8" matSort matSortActive="posteddate">
@@ -17,26 +19,30 @@
 
                     <th mat-header-cell *matHeaderCellDef></th>
                     <td mat-cell class="caracterText" *matCellDef="let element">
-                        
+
                         <mat-card-title>{{element.nome}}</mat-card-title>
                         <mat-card-subtitle>Costelação : {{element.constelacao}}</mat-card-subtitle>
 
                         <mat-button-toggle-group #group="matButtonToggleGroup" aria-label="Font Style">
-                            <mat-button-toggle checked value="{{element.opticoInfravermelho}}">
-                                Optico 
-                             </mat-button-toggle>
 
-                            <mat-button-toggle value="{{element.optico}}">
-                                Optico 
+                            <mat-button-toggle class="limitCaracteris" checked value="{{element.optico}}">
+                                Optico
                             </mat-button-toggle>
 
-                            <mat-button-toggle value="{{element.raioX}}">
-                                Optico 
+                            <mat-button-toggle class="limitCaracteris" value="{{element.raioX}}">
+                                Raio-X
                             </mat-button-toggle>
 
-                            <mat-button-toggle value="{{element.raioXInfravermelho}}">
-                                Optico 
+                            <mat-button-toggle class="limitCaracteris" value="{{element.raioXInfravermelho}}">
+                                Raio-X-I.R
                             </mat-button-toggle>
+
+                            <mat-button-toggle class="limitCaracteris" value="{{element.opticoInfravermelho}}">
+                                Infra-red
+                            </mat-button-toggle>
+
+
+
                         </mat-button-toggle-group>
 
 
