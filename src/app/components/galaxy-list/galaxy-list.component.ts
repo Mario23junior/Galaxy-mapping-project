@@ -44,8 +44,8 @@ export class GalaxyListComponent implements OnInit {
 
   ViewDetails(galaxias:Galaxias) {
      this.dialog.open(GalaxyDateDetailsComponent,{
-       width:'400px',
-       height:'450px',
+       width:'700px',
+       height:'650px',
        data:galaxias
      })
   }
