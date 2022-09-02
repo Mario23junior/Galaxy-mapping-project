@@ -21,18 +21,18 @@
             
               <ng-container matColumnDef="constelacao">
                 <th mat-header-cell *matHeaderCellDef>Redshift </th>
-                <td mat-cell class="limitCaracteris" *matCellDef="let element"> {{element.desvioVermelho}} </td>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.desvioVermelho}} </td>
             </ng-container>
 
 
             <ng-container matColumnDef="dimensoes">
                 <th mat-header-cell *matHeaderCellDef>Dimensões </th>
-                <td mat-cell class="limitCaracteris" *matCellDef="let element"> {{element.dimensoes}} </td>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.dimensoes}} </td>
             </ng-container>
 
             <ng-container matColumnDef="distancia">
                 <th mat-header-cell *matHeaderCellDef>Distancia </th>
-                <td mat-cell class="limitCaracteris" *matCellDef="let element"> {{element.distancia}} Anos luz </td>
+                <td mat-cell  (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.distancia}} Anos luz </td>
             </ng-container>
 
 
@@ -65,22 +65,22 @@
 
             <ng-container matColumnDef="raio">
                 <th mat-header-cell *matHeaderCellDef>Raio</th>
-                <td mat-cell class="limitCaracteris" *matCellDef="let element"> {{element.raio}} </td>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.raio}} </td>
             </ng-container>
 
             <ng-container matColumnDef="magnitude">
                 <th mat-header-cell *matHeaderCellDef>Magnitude</th>
-                <td mat-cell class="limitCaracteris" *matCellDef="let element"> {{element.magnitude}} </td>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.magnitude}} </td>
             </ng-container>
 
             <ng-container matColumnDef="massa">
                 <th mat-header-cell *matHeaderCellDef>Massa</th>
-                <td mat-cell class="limitCaracteris" *matCellDef="let element"> {{element.massa}} </td>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.massa}} </td>
             </ng-container>
 
             <ng-container matColumnDef="estrelas">
                 <th mat-header-cell *matHeaderCellDef>Estrelas</th>
-                <td mat-cell class="limitCaracteris" *matCellDef="let element"> {{element.estrelas}} Bilhões</td>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.estrelas}} Bilhões</td>
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="displayedCaracteColumns"></tr>
@@ -112,22 +112,22 @@
 
             <ng-container matColumnDef="rotacao">
                 <th mat-header-cell *matHeaderCellDef>Rotação</th>
-                <td mat-cell class="limitCaracteris" *matCellDef="let element"> {{element.rotacao}} </td>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.rotacao}} </td>
             </ng-container>
 
             <ng-container matColumnDef="declinacao">
                 <th mat-header-cell *matHeaderCellDef>Declinacao</th>
-                <td mat-cell class="limitCaracteris" *matCellDef="let element"> {{element.declinacao}}° </td>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.declinacao}}° </td>
             </ng-container>
 
             <ng-container matColumnDef="IdadeEstimada">
                 <th mat-header-cell *matHeaderCellDef>Idade</th>
-                <td mat-cell class="limitCaracteris" *matCellDef="let element"> {{element.IdadeEstimada}}</td>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.IdadeEstimada}}</td>
             </ng-container>
 
             <ng-container matColumnDef="coordenadas">
                 <th mat-header-cell *matHeaderCellDef>coordenadas</th>
-                <td mat-cell class="limitCaracteris" *matCellDef="let element"> {{element.coordenadas}}°</td>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.coordenadas}}°</td>
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="displayedCSensorEspecColumns"></tr>
