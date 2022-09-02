@@ -1,9 +1,11 @@
-<br><br>
+<br>
+<br>
+<br>
 <mat-card>
     <ng-container matColumnDef="nome">
         <mat-card-header>
             <mat-card-title>Mapeamento de Buraco Negros</mat-card-title>
-            <div mat-card-avatar class="avatar-galaxy"></div>
+            <div mat-card-avatar class="avatar-blackHole"></div>
             <mat-card-subtitle>Basicamento quando uma estrela fica sem combustível nuclear, ela entra em colapso. Se o núcleo, ou
                 região central, da estrela tiver uma massa maior que três sóis, nenhuma força nuclear conhecida pode
                 impedir que o núcleo forme uma deformação gravitacional profunda no espaço chamada buraco negro.
@@ -13,13 +15,15 @@
                 quilômetros para um buraco negro não giratório com a massa de 10 sóis.
             </mat-card-subtitle>
         </mat-card-header>
+        <br>
         <div *ngIf="blackHoles$ | async as blackHoles; else loadingTemplet">
             <table mat-table [dataSource]="blackHoles" class="mat-elevation-z8" matSort matSortActive="posteddate">
                 <ng-container matColumnDef="nome">
 
                     <th mat-header-cell *matHeaderCellDef></th>
                     <td mat-cell class="caracterText" *matCellDef="let element">
-
+                        
+                        <br>
                         <mat-card-title>{{element.nome}}</mat-card-title>
                         <mat-card-subtitle>Costelação : {{element.constelacao}}</mat-card-subtitle>
 
@@ -57,6 +61,8 @@
 
                             <p>{{element.descricao}}</p>
                         </mat-card-content>
+                        <br>
+                        <br>
 
                 </ng-container>
                 <tr mat-header-row *matHeaderRowDef="displayedBlacHoleColumns"></tr>
@@ -69,3 +75,6 @@
             </div>
         </ng-template>
     </ng-container>
+    <br>
+    <br>
+    <br>

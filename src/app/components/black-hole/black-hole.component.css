@@ -18,6 +18,11 @@ ng-star-inserted {
     opacity: 1;
 }
 
+.avatar-blackHole {
+    background-image: url('src/assets/img/icons-black-hole.png');
+    background-size: cover;
+}
+
 .limitCaracteris {
     max-width: 10ch;
     overflow: hidden;
