@@ -43,7 +43,8 @@ import { GalaryGalaxyComponent } from './components/galary-galaxy/galary-galaxy.
 import { BlackHoleComponent } from './components/black-hole/black-hole.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatTabsModule } from '@angular/material/tabs';
-
+import { GalaxyDateDetailsComponent } from './components/galaxy-date-details/galaxy-date-details.component';
+  
 
 
 // Componentes do projeto
@@ -57,8 +58,9 @@ import { MatTabsModule } from '@angular/material/tabs';
     GalaxyListComponent,
     ErrorDialogComponent,
     GalaryGalaxyComponent,
-    BlackHoleComponent
-  ],
+    BlackHoleComponent,
+    GalaxyDateDetailsComponent,
+   ],
 
   imports: [
     BrowserModule,

@@ -24,7 +24,7 @@ ng-star-inserted {
 }
 
 .limitCaracteris {
-    max-width: 10ch;
+    max-width: 8ch;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
