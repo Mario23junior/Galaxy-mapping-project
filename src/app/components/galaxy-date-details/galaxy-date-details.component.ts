@@ -15,6 +15,7 @@ export class GalaxyDateDetailsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+ 
 
   fechar () {
     this.dialogRef.close()
