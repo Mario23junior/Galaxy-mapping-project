@@ -1,35 +1,66 @@
-<mat-card style="text-align: center;">
-    <mat-card-header>
-        <mat-card-title>{{galaxias.nome}}</mat-card-title>
-        <mat-card-subtitle>{{galaxias.constelacao}}</mat-card-subtitle>
-    </mat-card-header>
-        <p>Satelite natural : {{galaxias.magnitude}}
-        <p>
-        <p>Semieixo Maior : {{galaxias.declinacao}}
-        <p>
-        <p>Pressão Atmosferica : {{galaxias.distancia}}
-        <p>
-        <p>Massa do satelite natural : {{galaxias.desvioVermelho}}
-        <p>
-        <p>Periodo de rotação : {{galaxias.rotacao}}
-        <p>
-        <p>Periodo orbital : {{galaxias.dimensoes}}
-        <p>
-        <p>Inclinação : {{galaxias.raio}}
-        <p>
-        <p>Velocidade orbital media : {{galaxias.IdadeEstimada}}
-        <p>
-        <p>Velocidade orbital media : {{galaxias.massa}}
-        <p>
-        <p>Velocidade orbital media : {{galaxias.estrelas}}
-        <p>
-        <p>Velocidade orbital media : {{galaxias.coordenadas}}
-        <p>
-        <p>Velocidade orbital media : {{galaxias.descricao}}
-            
-        <mat-card-content>
-        </mat-card-content>
-        <mat-card-actions align="start">
-            <button mat-button (click)="fechar()">Fechar</button>
-        </mat-card-actions>
+
+<mat-card>
+<mat-card-title>{{galaxias.nome}}</mat-card-title>
+<mat-card-subtitle>{{galaxias.constelacao}}</mat-card-subtitle>
+<mat-card-content>
+    <mat-list role="list">
+
+        <mat-list-item role="listitem">
+            Magnitude :
+           - {{galaxias.magnitude}}
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+            declinacao :
+            {{galaxias.declinacao}}
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+            Distancia :
+            {{galaxias.distancia}}
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+            Raio :
+            {{galaxias.raio}}
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+            Desvio vermelho:
+           000,{{galaxias.desvioVermelho}}
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+            dimensoes:
+            {{galaxias.dimensoes}}
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+            Raio:
+            {{galaxias.raio}} anos-luz
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+            Massa:
+            {{galaxias.raio}} Mʘ
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+            IdadeEstimada:
+            {{galaxias.IdadeEstimada}} anos
+        </mat-list-item>
+
+        <mat-list-item role="listitem">
+            Estrelas:
+            {{galaxias.estrelas}} bilhões
+        </mat-list-item>
+
+    </mat-list>
+</mat-card-content>
+<mat-card-content>
+    <p>{{galaxias.descricao}}</p>
+</mat-card-content>
+<mat-card-actions>
+    <button mat-raised-button (click)="fechar()" color="warn">Fechar</button>
+</mat-card-actions>
 </mat-card>
