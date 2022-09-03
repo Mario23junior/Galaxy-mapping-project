@@ -3,8 +3,11 @@ mat-list-item {
     font-size: 12px;
 }
 
-.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+.mat-list-base,p .mat-list-item,
+.mat-list-base .mat-list-option {
     display: block;
-    height: 28px;
-    padding: 0;
+     align-items: center;
+    align-content: center;
 }
+
+ 
