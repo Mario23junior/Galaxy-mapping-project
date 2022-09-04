@@ -8,7 +8,9 @@
 
 h1 {
   background: url("/assets/img/gala-header.gif");
-  height: 28px;
+  height: auto;
+  width: auto;
+  font-weight: bold;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
