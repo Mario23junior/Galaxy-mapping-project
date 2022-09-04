@@ -44,7 +44,8 @@ import { BlackHoleComponent } from './components/black-hole/black-hole.component
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatTabsModule } from '@angular/material/tabs';
 import { GalaxyDateDetailsComponent } from './components/galaxy-date-details/galaxy-date-details.component';
-  
+import { MatExpansionModule } from '@angular/material/expansion';
+ 
 
 
 // Componentes do projeto
@@ -92,7 +93,8 @@ import { GalaxyDateDetailsComponent } from './components/galaxy-date-details/gal
     MatGridListModule,
     FormsModule,
     MatButtonToggleModule,
-    MatTabsModule
+    MatTabsModule,
+    MatExpansionModule
 
   ],
   providers: [],

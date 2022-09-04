@@ -4,7 +4,7 @@ import { BlackHoleComponent } from './components/black-hole/black-hole.component
 import { GalaryGalaxyComponent } from './components/galary-galaxy/galary-galaxy.component';
 import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.component';
 import { HomeComponent } from './components/home/home.component';
-import { NavComponent } from './components/nav/nav.component';
+ import { NavComponent } from './components/nav/nav.component';
  
 const routes: Routes = [
   {
@@ -20,6 +20,10 @@ const routes: Routes = [
       },
       {
         path:'gallery',
+        component:GalaryGalaxyComponent
+      },
+      {
+        path:'foto-day',
         component:GalaryGalaxyComponent
       },
       {

@@ -19,6 +19,8 @@ export class NavComponent implements OnInit {
     this.galaxias = this.galaxias
    }
 
+ 
+
   ngOnInit(): void {
     this.router.navigate(['home'])
   }
