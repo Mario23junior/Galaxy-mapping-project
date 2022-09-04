@@ -45,6 +45,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatTabsModule } from '@angular/material/tabs';
 import { GalaxyDateDetailsComponent } from './components/galaxy-date-details/galaxy-date-details.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { DayPhotoComponent } from './components/day-photo/day-photo.component';
  
 
 
@@ -61,6 +62,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     GalaryGalaxyComponent,
     BlackHoleComponent,
     GalaxyDateDetailsComponent,
+    DayPhotoComponent,
    ],
 
   imports: [
