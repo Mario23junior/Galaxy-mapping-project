@@ -21,4 +21,6 @@ export class GalaxyDateDetailsComponent implements OnInit {
     this.dialogRef.close()
   }
 
+  
+
 }
