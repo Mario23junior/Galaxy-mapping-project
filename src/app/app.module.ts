@@ -46,6 +46,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { GalaxyDateDetailsComponent } from './components/galaxy-date-details/galaxy-date-details.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { DayPhotoComponent } from './components/day-photo/day-photo.component';
+import { ApodDayPhotoService } from './components/service/apod-day-photo.service';
  
 
 
@@ -63,7 +64,7 @@ import { DayPhotoComponent } from './components/day-photo/day-photo.component';
     BlackHoleComponent,
     GalaxyDateDetailsComponent,
     DayPhotoComponent,
-   ],
+    ],
 
   imports: [
     BrowserModule,

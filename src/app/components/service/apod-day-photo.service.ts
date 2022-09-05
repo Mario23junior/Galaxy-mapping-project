@@ -13,7 +13,7 @@ export class ApodDayPhotoService {
 
   constructor(private httpClient: HttpClient) { }
 
-  findByDate(date: any): Observable<DayPhotoNasa> {
-    return this.httpClient.get<DayPhotoNasa>(`${this.API}${date}`)
+  findByDate(date: String):Observable<DayPhotoNasa> {
+    return this.httpClient.get<DayPhotoNasa>(this.baseUrl+this.API+date)
   }
 }

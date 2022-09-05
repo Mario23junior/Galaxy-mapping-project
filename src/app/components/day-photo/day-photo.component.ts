@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Component, Inject, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { catchError, Observable } from 'rxjs';
 import { DayPhotoNasa } from 'src/app/model/DayPhotoNasaBridey';
+import { ApodDayPhotoService } from '../service/apod-day-photo.service';
 
 @Component({
   selector: 'app-day-photo',
@@ -9,13 +11,17 @@ import { DayPhotoNasa } from 'src/app/model/DayPhotoNasaBridey';
 })
 export class DayPhotoComponent implements OnInit {
 
-  constructor(
-    private dayPhotoApod: Observable<DayPhotoNasa>
-  ) {
-    this.dayPhotoApod = dayPhotoApod
+
+  constructor(private service: ApodDayPhotoService,private router:Router) { }
+
+  crateRequicaoDate(date: String) {
+    this.service.findByDate(date).subscribe(() => {
+      this.router.navigate(['/fotoDay'])
+    })
   }
 
   ngOnInit(): void {
+
   }
 
 }
