@@ -12,7 +12,7 @@ import { FormGroupDirective, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
 
 // Imports para componentes do Angular Material
- import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -21,7 +21,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
 import { MatRadioModule } from '@angular/material/radio';
- import { MatIconModule } from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -47,9 +47,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatTabsModule } from '@angular/material/tabs';
 import { GalaxyDateDetailsComponent } from './components/galaxy-date-details/galaxy-date-details.component';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { DayPhotoComponent } from './components/day-photo/day-photo.component';
-import { ApodDayPhotoService } from './components/service/apod-day-photo.service';
-
+ 
 
 // Componentes do projeto
 
@@ -63,8 +61,7 @@ import { ApodDayPhotoService } from './components/service/apod-day-photo.service
     ErrorDialogComponent,
     GalaryGalaxyComponent,
     BlackHoleComponent,
-    GalaxyDateDetailsComponent,
-    DayPhotoComponent,
+    GalaxyDateDetailsComponent
   ],
 
   imports: [
@@ -99,7 +96,8 @@ import { ApodDayPhotoService } from './components/service/apod-day-photo.service
     MatButtonToggleModule,
     MatTabsModule,
     MatExpansionModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatInputModule
 
   ],
   providers: [],
