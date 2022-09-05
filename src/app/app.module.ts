@@ -98,7 +98,8 @@ import { ApodDayPhotoService } from './components/service/apod-day-photo.service
     FormsModule,
     MatButtonToggleModule,
     MatTabsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

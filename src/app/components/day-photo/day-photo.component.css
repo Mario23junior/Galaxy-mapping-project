@@ -1,4 +1,5 @@
-form {
-    display: flex;
-    flex-direction: column;
+mat-card-actions{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }

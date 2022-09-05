@@ -1,10 +1,13 @@
 <br>
 <br>
-<mat-card class="example-card">
+
+
+<mat-card class="card">
     <mat-card-header>
-        <mat-card-title></mat-card-title>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="" alt="Photo of a Shiba Inu">
+    <img mat-card-image src=" " alt="Photo of a Shiba Inu">
     <mat-card-content>
         <p>
             The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
@@ -13,14 +16,10 @@
         </p>
     </mat-card-content>
     <mat-card-actions>
-        <form>
+        <form [formGroup]="form">
             <mat-form-field>
-                <input matInput  type="date" name="date" [(ngModel)]="dataDatNasa.date">
+                <input matInput type="date" formControlName="date" placeholder="Digite sua data">
             </mat-form-field>
-            <button mat-button (click)="crateRequicaoDate(dataDatNasa.date)" color="accent">
-                save
-            </button>
-
         </form>
     </mat-card-actions>
 </mat-card>

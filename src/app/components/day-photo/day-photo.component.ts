@@ -1,8 +1,8 @@
-import { Component, Inject, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { catchError, Observable } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { DayPhotoNasa } from 'src/app/model/DayPhotoNasaBridey';
 import { ApodDayPhotoService } from '../service/apod-day-photo.service';
+import { GalaxyServiceService } from '../service/galaxy-service.service';
 
 @Component({
   selector: 'app-day-photo',
@@ -11,20 +11,22 @@ import { ApodDayPhotoService } from '../service/apod-day-photo.service';
 })
 export class DayPhotoComponent implements OnInit {
 
-  dataDatNasa :DayPhotoNasa = {
-    date:''
-  }
+  form: FormGroup
 
-  constructor(private service: ApodDayPhotoService,private router:Router) { }
-
-  crateRequicaoDate(date: String) {
-    this.service.findByDate(date).subscribe(() => {
-      this.router.navigate(['/fotoDay'])
+  constructor(
+    private service:ApodDayPhotoService,
+    private formBuild:FormBuilder
+  ) {
+    this.form = formBuild.group({
+      date:[null]
     })
-  }
+   }
 
   ngOnInit(): void {
+  }
 
+  consultDate(data:String){
+     this.service.findByDate(data)
   }
 
 }
