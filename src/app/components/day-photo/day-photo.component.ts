@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { DayPhotoNasa } from 'src/app/model/DayPhotoNasaBridey';
 
 @Component({
   selector: 'app-day-photo',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DayPhotoComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private dayPhotoApod: Observable<DayPhotoNasa>
+  ) {
+    this.dayPhotoApod = dayPhotoApod
+  }
 
   ngOnInit(): void {
   }
