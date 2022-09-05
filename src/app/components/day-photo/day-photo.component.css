@@ -1,5 +1,12 @@
-mat-card-actions{
+form,
+  mat-form-field{
     align-items: center;
     text-align: center;
     justify-content: center;
 }
+
+mat-card-actions{
+    text-align: center;
+   
+}
+ 

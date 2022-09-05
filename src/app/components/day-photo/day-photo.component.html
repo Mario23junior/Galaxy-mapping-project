@@ -1,7 +1,6 @@
 <br>
 <br>
 
-
 <mat-card class="card">
     <mat-card-header>
         <mat-card-title>Shiba Inu</mat-card-title>
@@ -15,11 +14,12 @@
             bred for hunting.
         </p>
     </mat-card-content>
+    <form>
+        <mat-form-field>
+            <input matInput type="date" placeholder="Digite sua data">
+        </mat-form-field>
+    </form>    
     <mat-card-actions>
-        <form [formGroup]="form">
-            <mat-form-field>
-                <input matInput type="date" formControlName="date" placeholder="Digite sua data">
-            </mat-form-field>
-        </form>
+        <button   mat-flat-button color="accent">Accent</button>
     </mat-card-actions>
 </mat-card>
