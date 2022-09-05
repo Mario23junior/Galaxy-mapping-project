@@ -11,6 +11,9 @@ import { ApodDayPhotoService } from '../service/apod-day-photo.service';
 })
 export class DayPhotoComponent implements OnInit {
 
+  dataDatNasa :DayPhotoNasa = {
+    date:''
+  }
 
   constructor(private service: ApodDayPhotoService,private router:Router) { }
 

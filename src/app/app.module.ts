@@ -6,14 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Para trabalhar com formulários no Angular 12
-import { FormGroupDirective, FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { FormGroupDirective, ReactiveFormsModule } from "@angular/forms";
 
 // Para realizar requisições HTTP
 import { HttpClientModule } from '@angular/common/http';
 
 // Imports para componentes do Angular Material
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatPaginatorModule } from '@angular/material/paginator';
+ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -22,8 +21,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
 import { MatRadioModule } from '@angular/material/radio';
-import { MatInputModule } from '@angular/material/input';
-import { MatIconModule } from '@angular/material/icon';
+ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -31,6 +29,10 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatSortModule } from '@angular/material/sort';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FormGroup } from '@angular/forms';
+
+import { FormsModule } from '@angular/forms'
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatInputModule } from '@angular/material/input'
 
 
 // componentes internos
@@ -47,7 +49,6 @@ import { GalaxyDateDetailsComponent } from './components/galaxy-date-details/gal
 import { MatExpansionModule } from '@angular/material/expansion';
 import { DayPhotoComponent } from './components/day-photo/day-photo.component';
 import { ApodDayPhotoService } from './components/service/apod-day-photo.service';
- 
 
 
 // Componentes do projeto
@@ -64,7 +65,7 @@ import { ApodDayPhotoService } from './components/service/apod-day-photo.service
     BlackHoleComponent,
     GalaxyDateDetailsComponent,
     DayPhotoComponent,
-    ],
+  ],
 
   imports: [
     BrowserModule,
