@@ -1,18 +1,25 @@
 <br>
 <br>
 <mat-card *ngFor="let result of data" class="example-card">
-    <mat-card-header>
-       <mat-card-title>{{result.title}}</mat-card-title>
-      <mat-card-subtitle>{{result.date}}</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="{{result.hdurl}}" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        {{result.explanation}}
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-       <button mat-button>Consult</button>
-    </mat-card-actions>
-  </mat-card>
-  
+  <mat-card-header>
+    <mat-card-title>{{result.title}}</mat-card-title>
+    <mat-card-subtitle>{{result.date}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{result.hdurl}}" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      {{result.explanation}}
+    </p>
+  </mat-card-content><br><br>
+
+  <div class="center-content">
+    <mat-form-field appearance="fill">
+      <mat-label>Consulta a foto tirada em suas datas mais importantes.</mat-label>
+      <input matInput type="date" placeholder="Ex. 2020-12-29">
+    </mat-form-field>
+  </div>
+
+  <mat-card-actions>
+    <button mat-flat-button color="accent">Consulta</button>
+  </mat-card-actions>
+</mat-card>
