@@ -1,5 +1,4 @@
 import { HttpClient } from '@angular/common/http';
-import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -14,7 +13,7 @@ import { ApodDayPhotoService } from '../service/apod-day-photo.service';
 export class ApodDayPhotoComponent implements OnInit {
 
   data: DayPhotoNasa[] = [];
-  photoDay: [] = []
+  photoDay:any
 
   public form: FormGroup
 
@@ -35,12 +34,8 @@ export class ApodDayPhotoComponent implements OnInit {
       })
   }
 
-  ConsultForDatePhoto(){
-    //  this.service.findByDate('date')
-    //  .subscribe(date => {
-    //    this.photoDay = date
-    //  })
-     
+  ConsultForDatePhoto() {
+      
   }
 
 
