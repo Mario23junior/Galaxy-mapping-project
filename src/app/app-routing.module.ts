@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ApodDayPhotoComponent } from './components/apod-day-photo/apod-day-photo.component';
 import { BlackHoleComponent } from './components/black-hole/black-hole.component';
 import { GalaryGalaxyComponent } from './components/galary-galaxy/galary-galaxy.component';
 import { GalaxyListComponent } from './components/galaxy-list/galaxy-list.component';
@@ -19,6 +20,10 @@ const routes: Routes = [
         component:GalaxyListComponent
       },
       {
+        path:'photo-nasa',
+        component:ApodDayPhotoComponent
+      },
+      {
         path:'gallery',
         component:GalaryGalaxyComponent
       },
@@ -31,6 +36,7 @@ const routes: Routes = [
 
 ];
 
+ 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
