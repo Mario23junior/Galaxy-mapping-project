@@ -14,7 +14,7 @@ export class GalaxyServiceService {
   constructor(private httpClient: HttpClient) {}
 
   listAll() {
-    return this.httpClient.get<Galaxias[]>(this.API)
+    return this.httpClient.get<Galaxias[]>(this.baseUrl+this.API)
     .pipe(
       first(),
       delay(1200),

@@ -14,7 +14,7 @@ export class BlackServiceService {
   constructor(private httpClient: HttpClient) { }
 
   listAll() {
-    return this.httpClient.get<blackHoles[]>(this.API)
+    return this.httpClient.get<blackHoles[]>(this.baseUrl+this.API)
       .pipe(
         first(),
         delay(1200),
