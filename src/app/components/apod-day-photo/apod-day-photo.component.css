@@ -1,6 +1,13 @@
- 
  mat-card-actions,
-.center-content {
-  text-align: center;
-  align-items: center;
-}
+ .center-content {
+   text-align: center;
+   align-items: center;
+ }
+
+ mat-form-field,
+ input,
+ button,
+ mat-label {
+   width: 20rem;
+   font-size: 1rem;
+ }
