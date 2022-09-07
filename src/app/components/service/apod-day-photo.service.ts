@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { delay, first, Observable, tap } from 'rxjs';
+import { delay, first, lastValueFrom, Observable, tap } from 'rxjs';
 import { DayPhotoNasa } from 'src/app/model/DayPhotoNasaBridey';
 
 @Injectable({
@@ -23,11 +23,13 @@ export class ApodDayPhotoService {
         tap(dayPhoto => console.log(dayPhoto))
       )
   }
-  findByDate(date: string):Observable<DayPhotoNasa> {
-    return this.http.get<DayPhotoNasa>(this.urlBase + this.parametros + this.atribut + { date })
+  findByDate(date: string): Observable<DayPhotoNasa> {
+    const url = (this.urlBase + this.parametros + this.atribut + date)
+    console.log(url)
+    return this.http.get<DayPhotoNasa>(url)
       .pipe(
         first(),
-        tap(dataParameter => console.log(dataParameter))
+        tap(day => console.log(day))
       )
   }
 }

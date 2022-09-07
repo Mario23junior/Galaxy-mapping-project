@@ -13,16 +13,15 @@
   </mat-card-content><br><br>
 
   <form [formGroup]="form">
-  <div class="center-content">
-    <mat-form-field appearance="fill">
-      <mat-label>Consulta a foto tirada em suas datas mais importantes.</mat-label>
-      <input matInput formControlName="date" type="date" placeholder="Ex. 2020-12-29">
-      <mat-card-actions>
-        <button mat-flat-button (click)="ConsultForDatePhoto()"  name="date" color="accent">Consulta</button>
-      </mat-card-actions>
-    </mat-form-field>
-  </div>
-</form>
+    <div class="center-content">
+      <mat-form-field>
+        <input matInput formControlName="date" placeholder="Digite a sua data" type="date">
+      </mat-form-field>
+    </div>
+  </form>
 
-</mat-card>
+  <button mat-button (click)="ConsultForDatePhoto()" color="primary">
+    Consultar
+  </button>
  
+ </mat-card>
