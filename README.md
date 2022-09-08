@@ -5,7 +5,6 @@
   <a href="logo.gif">
     <img src="logo/logo.gif" alt="Logo" width="700" height="300" style="border-radius: 50%"/>
   </a>
-
   
   <h3 align="center"> Scientific Galaxy API</h3>
 
