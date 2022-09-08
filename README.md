@@ -1,3 +1,26 @@
+ <div id="top"></div> 
+
+<br />
+<div align="center">
+  <a href="logo.gif">
+    <img src="logo/logo.gif" alt="Logo" width="700" height="300" style="border-radius: 50%"/>
+  </a>
+
+  
+  <h3 align="center"> Scientific Galaxy API</h3>
+
+  <h4 align="center">
+     <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+     ·
+    <a href="">Reportar Bug</a>
+    ·
+    <a href="">Soliciatar recurso</a>
+  </p>
+</div>
+
 # GalaxyProject
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 14.0.6.
