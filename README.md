@@ -48,7 +48,7 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 
 ## Como instalar
 
-- Baixe ou clone este repositório usando `git clone https://github.com/giordanna/projeto-cadastro-pessoa.git`;
+- Baixe ou clone este repositório usando `git clone https://github.com/Mario23junior/Galaxy-mapping-project.git`;
 - Dentro do diretório, instale as dependências usando `npm install`.
 
 ## Como executar
