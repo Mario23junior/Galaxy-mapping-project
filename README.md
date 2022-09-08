@@ -21,6 +21,16 @@
   </p>
 </div>
 
+## Screenshots
+
+[<img src="/readme/Wallabag%20Reading%20List.png" align="left"
+width="200"
+    hspace="10" vspace="10">](/readme/Wallabag%20Reading%20List.png)
+[<img src="/readme/Wallabag%20Article%20View.png" align="center"
+width="200"
+    hspace="10" vspace="10">](/readme/Wallabag%20Article%20View.png)
+
+
 # GalaxyProject
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 14.0.6.
