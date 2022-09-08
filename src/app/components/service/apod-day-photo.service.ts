@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { delay, first, lastValueFrom, Observable, tap } from 'rxjs';
+import { MatDialog } from '@angular/material/dialog';
+import { catchError, delay, first, lastValueFrom, Observable, tap } from 'rxjs';
 import { DayPhotoNasa } from 'src/app/model/DayPhotoNasaBridey';
+import { ErrorDialogComponent } from '../error-dialog/error-dialog.component';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +15,8 @@ export class ApodDayPhotoService {
   private atribut = "date=";
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    public dialog: MatDialog
   ) { }
 
   findByDate(date: Observable<DayPhotoNasa[]>) {
@@ -24,10 +27,12 @@ export class ApodDayPhotoService {
     const url = (this.urlBase + this.parametros + this.atribut + valueConvert)
     let request = this.http.get<DayPhotoNasa[]>(url)
     console.log(request)
-     return request
+    return request
       .pipe(
-        first(),
-        tap(day => console.log(day))
+        catchError(error => {
+          this.onError('Data incorreta por favor insira data antes da tada atual')
+          return ([])
+        })
       )
   }
 
@@ -39,5 +44,11 @@ export class ApodDayPhotoService {
         tap(dayPhoto => console.log(dayPhoto))
       )
   }
+
+  onError(erroMesg: string){
+    this.dialog.open(ErrorDialogComponent, {
+     data: erroMesg
+   });
+}
 
 }
