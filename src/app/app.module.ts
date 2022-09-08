@@ -48,7 +48,11 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { GalaxyDateDetailsComponent } from './components/galaxy-date-details/galaxy-date-details.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ApodDayPhotoComponent } from './components/apod-day-photo/apod-day-photo.component';
- 
+import { MatDatepicker, MatDatepickerModule } from '@angular/material/datepicker';
+
+import { CdkMenuModule } from '@angular/cdk/menu';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 // Componentes do projeto
 
@@ -99,8 +103,10 @@ import { ApodDayPhotoComponent } from './components/apod-day-photo/apod-day-phot
     MatTabsModule,
     MatExpansionModule,
     ReactiveFormsModule,
-    MatInputModule
-
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
