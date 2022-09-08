@@ -43,12 +43,10 @@
 Algums parametros de ação são necessarios para a execução
 ### 📋 Pré-requisitos
  
-* <figure>
-  <img src="imagem.jpg" alt="Minha Figura">
-  <figcaption>Informações da Figura</figcaption>
-</figure>
-
-
+ * <img src="img-document/angular.svg" align="left" width="200" hspace="10" vspace="10">
+ * <img src="img-document/http.svg" align="left" width="200" hspace="10" vspace="10">
+ * <img src="img-document/universal.svg" align="left" width="200" hspace="10" vspace="10">
+ * <img src="img-document/material.svg" align="left" width="200" hspace="10" vspace="10">
 
 # Instalação 
 
