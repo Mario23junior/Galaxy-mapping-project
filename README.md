@@ -23,13 +23,38 @@
 
 ## Screenshots
 
-[<img src="/readme/Wallabag%20Reading%20List.png" align="left"
-width="200"
-    hspace="10" vspace="10">](/readme/Wallabag%20Reading%20List.png)
-[<img src="/readme/Wallabag%20Article%20View.png" align="center"
-width="200"
-    hspace="10" vspace="10">](/readme/Wallabag%20Article%20View.png)
+<img src="img-document/img2.png" align="left" width="200" hspace="10" vspace="10">
 
+
+<img src="img-document/img3.png" align="left" width="200" hspace="10" vspace="10">
+
+
+<img src="img-document/img4.png" align="left" width="200" hspace="10" vspace="10">
+
+
+<img src="img-document/img5.png" align="left" width="200" hspace="10" vspace="10">
+
+
+<img src="img-document/img6.png" align="left" width="200" hspace="10" vspace="10">
+ 
+ 
+<img src="img-document/img7.png" align="left" width="200" hspace="10" vspace="10">
+
+
+<img src="img-document/img8.png" align="left" width="200" hspace="10" vspace="10">
+
+
+<img src="img-document/img9.png" align="left" width="200" hspace="10" vspace="10">
+
+
+<img src="img-document/img10.png" align="left" width="200" hspace="10" vspace="10">
+
+
+<img src="img-document/img11.png" align="left" width="200" hspace="10" vspace="10">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+ 
 
 # GalaxyProject
 
