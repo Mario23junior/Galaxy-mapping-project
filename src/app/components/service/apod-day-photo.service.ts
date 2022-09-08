@@ -21,11 +21,7 @@ export class ApodDayPhotoService {
 
   findByDate(date: Observable<DayPhotoNasa[]>) {
     let convert = JSON.stringify(date)
-    console.log(convert)
-    let valueConvert = convert.slice(9,19)
-    // let valueConvert = convert[9] + convert[10] + convert[11]
-    //   + convert[12] + convert[13]
-    //   + convert[14] + convert[15] + convert[16] + convert[17] + convert[18]
+    let valueConvert = convert.slice(9, 19)
 
     const url = (this.urlBase + this.parametros + this.atribut + valueConvert)
     let request = this.http.get<DayPhotoNasa[]>(url)
