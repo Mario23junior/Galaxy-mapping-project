@@ -38,15 +38,12 @@
 <br><br><br><br><br><br><br><br><br>
 
 
- ## 🚀 Começando
-
 Algums parametros de ação são necessarios para a execução
 ### 📋 Pré-requisitos
  
- * <img src="img-document/angular.svg" align="left" width="200" hspace="10" vspace="10">
- * <img src="img-document/http.svg" align="left" width="200" hspace="10" vspace="10">
- * <img src="img-document/universal.svg" align="left" width="200" hspace="10" vspace="10">
- * <img src="img-document/material.svg" align="left" width="200" hspace="10" vspace="10">
+* [Angular 14](https://angular.io/)
+* [Angular Material](https://material.angular.io/)
+
 
 # Instalação 
 
