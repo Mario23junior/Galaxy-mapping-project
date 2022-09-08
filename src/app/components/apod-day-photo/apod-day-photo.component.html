@@ -5,26 +5,21 @@
     <mat-card-title>{{result.title}}</mat-card-title>
     <mat-card-subtitle>{{result.date}}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="{{result.hdurl}}" alt="Photo of a Shiba Inu">
+  <img mat-card-image src="{{result.hdurl}}" alt="Photo {{result.date}}">
   <mat-card-content>
     <p>
       {{result.explanation}}
     </p>
   </mat-card-content><br><br>
-
   <form [formGroup]="form">
     <div class="center-content">
       <mat-form-field>
         <input matInput formControlName="date" placeholder="Digite a sua data" type="date">
       </mat-form-field>
+      
+        <button mat-button mat-raised-button (click)="ConsultForDatePhoto()" color="primary">
+          Consultar
+        </button>
     </div>
   </form>
-
-  <button mat-button (click)="ConsultForDatePhoto()" color="primary">
-    Consultar
-  </button>
-
- 
-
- 
- </mat-card>
+</mat-card>
