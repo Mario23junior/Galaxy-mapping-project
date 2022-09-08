@@ -44,10 +44,21 @@ Algums parametros de ação são necessarios para a execução
 * [Angular 14](https://angular.io/)
 * [Angular Material](https://material.angular.io/)
 
-
-# Instalação 
-
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 14.0.6.
+
+## Como instalar
+
+- Baixe ou clone este repositório usando `git clone https://github.com/giordanna/projeto-cadastro-pessoa.git`;
+- Dentro do diretório, instale as dependências usando `npm install`.
+
+## Como executar
+
+Execute `ng serve` para executar a versão de desenvolvimento. Depois acesse `http://localhost:4200/`.
+
+## Como compilar/construir
+
+Execute `ng build` para buildar o projeto. Para buildar a versão de produção adicione a flag `--prod`. Os arquivos serão armazenados do diretório `dist`.
+ 
 
 ## Servidor de desenvolvimento
 
@@ -60,14 +71,7 @@ Execute `ng generate component component-name` para gerar um novo componente. Vo
 ## Construir
 
 Execute `ng build` para compilar o projeto. Os artefatos de construção serão armazenados no diretório `dist/`.
-
-## Executando testes de unidade
-
-Execute `ng test` para executar os testes de unidade via [Karma](https://karma-runner.github.io).
-
-## Executando testes de ponta a ponta
-
-Execute `ng e2e` para executar os testes de ponta a ponta por meio de uma plataforma de sua escolha. Para usar este comando, você precisa primeiro adicionar um pacote que implemente recursos de teste de ponta a ponta.
+ 
 
 ## Mais ajuda
 
