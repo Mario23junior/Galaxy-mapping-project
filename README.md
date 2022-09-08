@@ -33,10 +33,7 @@
 <img src="img-document/img11.png" align="left" width="200" hspace="10" vspace="10">
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br>
  
- 
-
 # Instalação 
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 14.0.6.
