@@ -13,7 +13,7 @@ import { ApodDayPhotoService } from '../service/apod-day-photo.service';
 export class ApodDayPhotoComponent implements OnInit {
 
   data: DayPhotoNasa[] = [];
-  photoDay: any[] = []
+  photoDay: DayPhotoNasa[] = []
 
   public form: FormGroup
 
@@ -35,7 +35,12 @@ export class ApodDayPhotoComponent implements OnInit {
   }
 
   ConsultForDatePhoto() {
-     this.service.findByDate(this.form.value)
+    let valueButton = this.form.value
+     this.service.findByDate(valueButton)
+     .subscribe(data => {
+      this.data = data;
+      console.log(data)
+    })
    }
 
   ngOnInit(): void {

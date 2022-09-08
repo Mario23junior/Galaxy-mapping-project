@@ -16,20 +16,20 @@ export class ApodDayPhotoService {
     private http: HttpClient
   ) { }
 
-  findByDate(date: string) {
+  findByDate(date: Observable<DayPhotoNasa[]>) {
     let convert = JSON.stringify(date)
     let returUnic = convert[9] + convert[10] + convert[11]
       + convert[12] + convert[13]
       + convert[14] + convert[15] + convert[16] + convert[17] + convert[18]
     const url = (this.urlBase + this.parametros + this.atribut + returUnic)
-    console.log(url)
-    return this.http.get<DayPhotoNasa>(url)
+    let request = this.http.get<DayPhotoNasa[]>(url)
+    console.log(request)
+     return request
       .pipe(
         first(),
         tap(day => console.log(day))
       )
   }
-
 
   listAllPhotoDay() {
     const url = this.urlBase + this.parametros
