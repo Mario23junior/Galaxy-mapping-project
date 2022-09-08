@@ -1,12 +1,11 @@
  <div id="top"></div> 
-
-<br />
+<br/>
 <div align="center">
   <a href="logo.gif">
     <img src="logo/logo.gif" alt="Logo" width="700" height="300" style="border-radius: 50%"/>
   </a>
   
-  <h3 align="center"> Scientific Galaxy API</h3>
+  <h3 align="center">Aplicativo mapeador de galaxias e buracos negros.</h3>
 
   <h4 align="center">
      <br />
@@ -23,39 +22,21 @@
 ## Screenshots
 
 <img src="img-document/img2.png" align="left" width="200" hspace="10" vspace="10">
-
-
-<img src="img-document/img3.png" align="left" width="200" hspace="10" vspace="10">
-
-
+<img src="img-document/img3.png" align="left" width="200" hspace="10" vspace="10"
 <img src="img-document/img4.png" align="left" width="200" hspace="10" vspace="10">
-
-
-<img src="img-document/img5.png" align="left" width="200" hspace="10" vspace="10">
-
-
-<img src="img-document/img6.png" align="left" width="200" hspace="10" vspace="10">
- 
- 
+<img src="img-document/img5.png" align="left" width="200" hspace="10" vspace="10"
+<img src="img-document/img6.png" align="left" width="200" hspace="10" vspace="10"> 
 <img src="img-document/img7.png" align="left" width="200" hspace="10" vspace="10">
-
-
 <img src="img-document/img8.png" align="left" width="200" hspace="10" vspace="10">
-
-
 <img src="img-document/img9.png" align="left" width="200" hspace="10" vspace="10">
-
-
 <img src="img-document/img10.png" align="left" width="200" hspace="10" vspace="10">
-
-
 <img src="img-document/img11.png" align="left" width="200" hspace="10" vspace="10">
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ 
  
 
-# GalaxyProject
+# Instalação 
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 14.0.6.
 
