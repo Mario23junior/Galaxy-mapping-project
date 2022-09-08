@@ -33,7 +33,19 @@
 <img src="img-document/img11.png" align="left" width="200" hspace="10" vspace="10">
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+ ## 🚀 Começando
+
+Algums parametros de ação são necessarios para a execução
+### 📋 Pré-requisitos
  
+* <figure>
+  <img src="imagem.jpg" alt="Minha Figura">
+  <figcaption>Informações da Figura</figcaption>
+</figure>
+
+
+
 # Instalação 
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 14.0.6.
