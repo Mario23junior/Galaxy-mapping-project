@@ -1,8 +1,5 @@
-import { animate, style, transition, trigger } from '@angular/animations';
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
 import { DayPhotoNasa } from 'src/app/model/DayPhotoNasaBridey';
 import { ApodDayPhotoService } from '../service/apod-day-photo.service';
 
