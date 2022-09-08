@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  background: url("/assets/img/gala-header.gif");
+  height: auto;
+  width: auto;
+  font-weight: bold;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.7;
+}
+ 
+
+
+h1 {
+  margin-top: 1rem;
+  border: -1px solid rgb(65, 62, 62);
+  font-size: 27px;
+  padding: 1rem 8%;
+  border-radius: 2rem;
+}
+
+/*Buracos negros nimation*/
+ 
+b,
+b:before,
+b:after {
+  display: inline;
+  position: relative;
+
+  border-radius: 60%;
+}
+
+b {
+  
+  width: 40vmin;
+   height: 41vmin;
+   box-shadow: 1vmin 0 3vmin 2vmin #f50,
+    inset -1vmin 0 3vmin 4vmin #f80,
+    -4vmin 0 35vmin 0 #f60;
+  animation: bh 5s linear infinite;
+}
+
+@keyframes bh {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(-360deg)
+  }
+}
+
+b:before,
+b:after {
+   background: white;
+  position: relative;
+  top: 6vmin;
+}
+
+b:after {
+  width: 28vmin;
+  height: 28vmin;
+  opacity: 0.03;
+  left: -14vmin;
+}

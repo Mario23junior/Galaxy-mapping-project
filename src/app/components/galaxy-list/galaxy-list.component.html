@@ -1,0 +1,142 @@
+<br><br>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Dados observacionais</mat-card-title>
+        <div mat-card-avatar class="avatar-img-1"></div>
+        <mat-card-subtitle>Tem como objetivo o processo de coleta e organizar os dados, para monitorar um processo ou
+            fenômeno.</mat-card-subtitle>
+        </mat-card-header>
+
+    <div *ngIf="galaxias$ | async as galaxias; else loadingTemplet">
+        <table mat-table [dataSource]="galaxias" class="mat-elevation-z8" matSort matSortActive="posteddate"
+            matSortDirection="asc">
+
+
+             <ng-container matColumnDef="nome"> 
+                <th mat-header-cell  *matHeaderCellDef> Nome </th>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.nome}}</td>
+            </ng-container>
+            
+            
+            
+              <ng-container matColumnDef="constelacao">
+                <th mat-header-cell *matHeaderCellDef>Redshift </th>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.desvioVermelho}} </td>
+            </ng-container>
+
+
+            <ng-container matColumnDef="dimensoes">
+                <th mat-header-cell *matHeaderCellDef>Dimensões </th>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.dimensoes}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="distancia">
+                <th mat-header-cell *matHeaderCellDef>Distancia </th>
+                <td mat-cell  (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.distancia}} Anos luz </td>
+            </ng-container>
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedObserveColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedObserveColumns;"></tr>
+        </table>
+    </div>
+    <ng-template #loadingTemplet>
+        <div class="loading-spinner">
+            <mat-spinner value="10" strokeWidth="3" diameter=120></mat-spinner>
+        </div>
+    </ng-template>
+</mat-card>
+
+
+
+<br><br>
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Caracteristicas Físicas</mat-card-title>
+        <div mat-card-avatar class="avatar-img-2"></div>
+        <mat-card-subtitle>Dados físicos sobre galaxias e galáxias e estruturas formadas por milhares a trilhões de
+            estrelas, poeira, gases e matéria escura.</mat-card-subtitle>
+    </mat-card-header>
+
+    <div *ngIf="galaxias$ | async as galaxias; else loadingTemplet">
+        <table mat-table [dataSource]="galaxias$" class="mat-elevation-z8" matSort matSortActive="posteddate"
+            matSortDirection="asc">
+
+            <ng-container matColumnDef="raio">
+                <th mat-header-cell *matHeaderCellDef>Raio</th>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.raio}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="magnitude">
+                <th mat-header-cell *matHeaderCellDef>Magnitude</th>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.magnitude}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="massa">
+                <th mat-header-cell *matHeaderCellDef>Massa</th>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.massa}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="estrelas">
+                <th mat-header-cell *matHeaderCellDef>Estrelas</th>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.estrelas}} Bilhões</td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedCaracteColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedCaracteColumns;"></tr>
+        </table>
+    </div>
+    <ng-template #loadingTemplet>
+        <div class="loading-spinner">
+            <mat-spinner value="10" strokeWidth="3" diameter=120></mat-spinner>
+        </div>
+    </ng-template>
+</mat-card>
+
+
+<br><br>
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Dados de espectrómetro sensorial</mat-card-title>
+        <div mat-card-avatar class="avatar-img-3"></div>
+        <mat-card-subtitle> Os dados capturados pelos sensores estão os Coarse Sun Sensors,
+            que garantem que o telescópio não apontará mais de 50 graus na
+            direção do Sol.
+            no computador de bordo do HST </mat-card-subtitle>
+    </mat-card-header>
+    <div *ngIf="galaxias$ | async as galaxias; else loadingTemplet">
+        <table mat-table [dataSource]="galaxias$" class="mat-elevation-z8" matSort matSortActive="posteddate"
+            matSortDirection="asc">
+
+            <ng-container matColumnDef="rotacao">
+                <th mat-header-cell *matHeaderCellDef>Rotação</th>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.rotacao}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="declinacao">
+                <th mat-header-cell *matHeaderCellDef>Declinacao</th>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.declinacao}}° </td>
+            </ng-container>
+
+            <ng-container matColumnDef="IdadeEstimada">
+                <th mat-header-cell *matHeaderCellDef>Idade</th>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.IdadeEstimada}}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="coordenadas">
+                <th mat-header-cell *matHeaderCellDef>coordenadas</th>
+                <td mat-cell (click)="ViewDetails(element)" class="limitCaracteris" *matCellDef="let element"> {{element.coordenadas}}°</td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedCSensorEspecColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedCSensorEspecColumns;"></tr>
+        </table>
+        <ng-template #loadingTemplet>
+            <div class="loading-spinner">
+                <mat-spinner value="10" strokeWidth="3" diameter=120></mat-spinner>
+            </div>
+        </ng-template>
+        <mat-card>
+        </mat-card>

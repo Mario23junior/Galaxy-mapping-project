@@ -1,0 +1,42 @@
+img {
+    border-radius: 1rem;
+}
+
+ mat-tab {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+mat-ripple,
+mat-tab-label,
+mat-focus-indicator,
+mat-tab-label,
+ng-star-inserted {
+    opacity: 1;
+}
+
+.avatar-blackHole {
+    background-image: url('src/assets/img/icons-black-hole.png');
+    background-size: cover;
+}
+
+.limitCaracteris {
+    max-width: 8ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.example-stretched-tabs {
+    max-width: 800px;
+}
+
+.loading-spinner {
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+ }

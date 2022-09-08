@@ -1,0 +1,73 @@
+<mat-card>
+    <mat-card-title>{{galaxias.nome}}</mat-card-title>
+    <mat-card-subtitle>{{galaxias.constelacao}}</mat-card-subtitle>
+    <mat-card-content>
+        <div class="item-list">
+            <mat-list role="list">
+
+                <p>
+                    Magnitude :
+                    - {{galaxias.magnitude}}
+                </p>
+
+                <p>
+                    Declinacao :
+                    {{galaxias.declinacao}}
+                </p>
+
+                <p>
+                    Distancia :
+                    {{galaxias.distancia}}
+                </p>
+
+                <p>
+                    Coordenadas :
+                    Ascensão Reta {{galaxias.coordenadas}}
+                </p>
+
+                <p>
+                    Raio :
+                    {{galaxias.raio}}
+                </p>
+
+                <p>
+                    RedShift:
+                    000,{{galaxias.desvioVermelho}}
+                </p>
+
+                <p>
+                    dimensoes:
+                    {{galaxias.dimensoes}}'×
+                </p>
+
+                <p>
+                    Raio:
+                    {{galaxias.raio}} anos-luz
+                </p>
+
+                <p>
+                    Massa:
+                    ~{{galaxias.raio}} Mʘ
+                </p>
+
+                <p>
+                    Idade:
+                    {{galaxias.IdadeEstimada}} anos
+                </p>
+
+                <p>
+                    Estrelas:
+                    {{galaxias.estrelas}}(10¹²) bilhões
+                </p>
+
+            </mat-list>
+        </div>
+    </mat-card-content>
+    <mat-card-content>
+        <p>{{galaxias.descricao}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button (click)="fechar()" color="warn">Fechar</button>
+    </mat-card-actions>
+</mat-card>
+

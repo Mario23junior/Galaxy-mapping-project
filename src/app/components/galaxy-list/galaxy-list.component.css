@@ -1,0 +1,73 @@
+table {
+  width: 100%;
+  height: auto;
+}
+
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.mat-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  display: table;
+  border-collapse: collapse;
+  margin: 0px;
+}
+
+.mat-row,
+.mat-header-row {
+  display: table-row;
+}
+
+.mat-cell,
+.mat-header-cell {
+  word-wrap: initial;
+  display: table-cell;
+  padding: 0px 5px;
+  line-break: unset;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.limitCaracteris {
+  max-width: 7ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.loading-spinner {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+ 
+.avatar-img-1 {
+  background-image: url('src/assets/img/telescope.png');
+  background-size: cover;
+}
+
+.avatar-img-2 {
+  background-image: url('src/assets/img/seno.png');
+  background-size: cover;
+}
+
+.avatar-img-3 {
+  background-image: url('src/assets/img/sensor.png');
+  background-size: cover;
+}
+
+@media (max-width: 320px) {
+  table {
+    width: 21rem;
+  }
+}

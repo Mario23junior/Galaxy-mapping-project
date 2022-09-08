@@ -1,0 +1,37 @@
+.container {
+    height: 100%;
+}
+
+.sidenav {
+    width: 13rem;
+    color: white;
+}
+
+img {
+    width: 100%;
+    margin: 4rem auto -1rem auto;
+    margin-top: 1rem;
+    padding: -4rem 8%;
+}
+
+.sidenav a {
+    color: white;
+}
+
+.sidenav i {
+    margin-right: 1rem;
+}
+
+.menu {
+    margin: 1rem 0 0 1rem;
+    color: white;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: 2rem;
+     text-align: center;
+    align-items: center;
+
+  }
+  

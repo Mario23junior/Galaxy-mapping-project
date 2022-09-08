@@ -1,0 +1,46 @@
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+        <img src="assets/img/logo-base2.png" alt="costellation-logo-nav">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/home">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+
+            <a mat-list-item routerLink="/list">
+                <i class="material-icons">insights</i>
+                Catalogação de galáxias
+            </a>
+ 
+            <a mat-list-item routerLink="/gallery">
+                <i class="material-icons">satellite_alt</i>
+                Galáxias
+            </a>
+
+            <a mat-list-item routerLink="/photo-nasa">
+                <i class="material-icons">photo_album</i>
+                Fotos tiradas em datas especias
+            </a>
+
+
+            <a mat-list-item routerLink="/blackHole">
+                <i class="material-icons">cyclone</i>
+                Buracos Negros
+            </a>
+
+            <a mat-list-item href="https://github.com/Mario23junior/Galaxy-mapping-project#readme">
+                <i class="material-icons">code</i>
+                Código-fonte
+            </a>
+        </mat-nav-list>
+    </mat-drawer>
+
+    <div class="sidenav-content">
+        <app-header></app-header>
+        <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
+            <mat-icon class="mat-18">menu</mat-icon>
+        </button>
+        <router-outlet></router-outlet>
+    </div>
+
+</mat-drawer-container>

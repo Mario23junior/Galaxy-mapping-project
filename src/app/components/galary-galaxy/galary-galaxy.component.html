@@ -1,0 +1,41 @@
+<br><br>
+<mat-card>
+    <ng-container matColumnDef="nome">
+        <mat-card-header>
+            <mat-card-title>Catalogação de galaxias</mat-card-title>
+            <div mat-card-avatar class="avatar-galaxy"></div>
+            <mat-card-subtitle>Catálogos e atlas de galáxias
+                recursos na internet
+                observatórios virtuais
+                coordenadas
+                nomes das galáxias
+                unidades úteis</mat-card-subtitle>
+        </mat-card-header>
+        <div *ngIf="galaxias$ | async as galaxias; else loadingTemplet">
+            <table mat-table [dataSource]="galaxias" class="mat-elevation-z8" matSort matSortActive="posteddate">
+                <ng-container matColumnDef="nome">
+                    <th mat-header-cell *matHeaderCellDef></th>
+                    <td mat-cell class="caracterText" *matCellDef="let element">
+                        <br>
+                        <img mat-card-image src={{element.urlImg}}>
+                        <mat-card-content>
+                            <mat-card-title>{{element.nome}}</mat-card-title>
+                            <mat-card-subtitle>Costelação : {{element.constelacao}}</mat-card-subtitle>
+                            <mat-card-subtitle>Declinação : {{element.declinacao}}</mat-card-subtitle>
+                            <mat-card-subtitle>Coordenadas : {{element.coordenadas}}</mat-card-subtitle>
+                            <mat-card-subtitle>Massa : {{element.massa}} Milhões</mat-card-subtitle>
+                            <mat-card-subtitle>Estrelas : {{element.estrelas}} Bilhões</mat-card-subtitle>
+                            <p>{{element.descricao}}</p>
+                        </mat-card-content>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedObserveColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedObserveColumns;"></tr>
+            </table>
+        </div>
+        <ng-template #loadingTemplet>
+            <div class="loading-spinner">
+                <mat-spinner value="10" strokeWidth="3" diameter=120></mat-spinner>
+            </div>
+        </ng-template>
+    </ng-container>
+
