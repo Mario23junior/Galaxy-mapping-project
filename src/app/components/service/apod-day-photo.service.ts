@@ -30,7 +30,7 @@ export class ApodDayPhotoService {
     return request
       .pipe(
         catchError(error => {
-          this.onError('Data incorreta por favor insira data antes da tada atual')
+          this.onError('Data incorreta por favor insira data antes da tada atual.')
           return ([])
         })
       )
