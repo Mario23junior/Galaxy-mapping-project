@@ -1,4 +1,4 @@
-#GalaxyProject
+# GalaxyProject
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 14.0.6.
 
