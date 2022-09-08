@@ -5,7 +5,7 @@
     <mat-card-title>{{result.title}}</mat-card-title>
     <mat-card-subtitle>{{result.date}}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="{{result.hdurl}}" alt="Photo {{result.date}}">
+  <img  @fade mat-card-image src="{{result.hdurl}}" alt="Photo {{result.date}}">
   <mat-card-content>
     <p>
       {{result.explanation}}
@@ -13,13 +13,10 @@
   </mat-card-content><br><br>
   <form [formGroup]="form">
     <div class="center-content">
-      <!-- <mat-form-field>
-        <input matInput formControlName="date" placeholder="Digite a sua data" type="date">
-      </mat-form-field> -->
 
       <mat-form-field appearance="fill">
         <mat-label>Choose a date</mat-label>
-        <input formControlName="date" placeholder="Digite a sua data"  matInput [matDatepicker]="picker">
+        <input formControlName="date" placeholder="Digite a sua data" matInput [matDatepicker]="picker">
         <mat-hint>MM/DD/YYYY</mat-hint>
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
