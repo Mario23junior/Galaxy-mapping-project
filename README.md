@@ -2,9 +2,7 @@
 <br/>
 <div align="center">
   <a href="logo.gif">
-    <img src="https://thumbs.gfycat.com/AdoredRawHaddock-size_restricted.gif" alt="Logo" width="600" height="300" style="border-radius: 50%"/>
-    
- 
+    <img src="img-document/logo2.gif" alt="Logo" width="600" height="300" style="border-radius: 50%"/>
   </a>
   
   <h3 align="center">Aplicativo mapeador de galaxias e buracos negros.</h3>
@@ -81,3 +79,13 @@ Execute `ng serve` para um servidor dev. Navegue até `http://localhost:4200/`. 
 ## Mais ajuda
 
 Para obter mais ajuda sobre a CLI Angular, use `ng help` ou confira a página [Visão Geral da CLI Angular e Referência de Comando](https://angular.io/cli).
+
+## 🔧 🔨 🛠  Construção ⛏ 🪚 🔩 ⚙️
+
+* [Typescript](https://www.typescriptlang.org/)
+* [NodeJs](https://nodejs.org/en/)
+* [NASA](https://solarsystem.nasa.gov/)
+
+## 📄 Licença
+
+Este projeto está sob a licença (GNU GPLv3) - [GNU GPLv3.md](https://www.gnu.org/licenses/gpl-3.0.pt-br.html)
