@@ -2,7 +2,7 @@
 <br/>
 <div align="center">
   <a href="logo.gif">
-    <img src="https://thumbs.gfycat.com/AdoredRawHaddock-size_restricted.gif" alt="Logo" width="300" height="300" style="border-radius: 50%"/>
+    <img src="https://thumbs.gfycat.com/AdoredRawHaddock-size_restricted.gif" alt="Logo" width="600" height="300" style="border-radius: 50%"/>
     
  
   </a>
