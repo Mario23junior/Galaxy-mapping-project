@@ -21,31 +21,30 @@
 
 ## Screenshots
 
-<img src="img-document/img2.png" align="left" width="200" hspace="10" vspace="10">
- <img src="img-document/img3.png" align="left" width="200" hspace="10" vspace="10">
- <img src="img-document/img4.png" align="left" width="200" hspace="10" vspace="10">
- <img src="img-document/img5.png" align="left" width="200" hspace="10" vspace="10">
+<img src="img-document/img2.png" align="left" width="100" hspace="10" vspace="10">
+ <img src="img-document/img3.png" align="left" width="100" hspace="10" vspace="10">
+ <img src="img-document/img4.png" align="left" width="100" hspace="10" vspace="10">
+ <img src="img-document/img5.png" align="left" width="100" hspace="10" vspace="10">
  
-<img src="img-document/img6.png" align="left" width="200" hspace="10" vspace="10"> 
+<img src="img-document/img6.png" align="left" width="100" hspace="10" vspace="10"> 
 <br>
-<img src="img-document/img7.png" align="left" width="200" hspace="10" vspace="10">
+<img src="img-document/img7.png" align="left" width="100" hspace="10" vspace="10">
 <br>
-<img src="img-document/img8.png" align="left" width="200" hspace="10" vspace="10">
+<img src="img-document/img8.png" align="left" width="100" hspace="10" vspace="10">
 <br>
-<img src="img-document/img9.png" align="left" width="200" hspace="10" vspace="10">
+<img src="img-document/img9.png" align="left" width="100" hspace="10" vspace="10">
 <br>
-<img src="img-document/img10.png" align="left" width="200" hspace="10" vspace="10">
+<img src="img-document/img10.png" align="left" width="100" hspace="10" vspace="10">
 <br>
-<img src="img-document/img11.png" align="left" width="200" hspace="10" vspace="10">
+<img src="img-document/img11.png" align="left" width="100" hspace="10" vspace="10">
 <br>
 
-<img src="img-document/img10.png" align="left" width="200" hspace="10" vspace="10">
+<img src="img-document/img10.png" align="left" width="100" hspace="10" vspace="10">
 <br>
-<img src="img-document/img11.png" align="left" width="200" hspace="10" vspace="10">
+<img src="img-document/img11.png" align="left" width="100" hspace="10" vspace="10">
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 Algums parametros de ação são necessarios para a execução
 ### 📋 Pré-requisitos
