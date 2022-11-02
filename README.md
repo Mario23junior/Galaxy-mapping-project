@@ -52,8 +52,8 @@
 Algums parametros de ação são necessarios para a execução
 ### 📋 Pré-requisitos
  
-* [Angular 14](https://angular.io/)
-* [Angular Material](https://material.angular.io/)
+* [NodeJs](https://nodejs.org/en/)
+* [Angular 14.0.6](https://material.angular.io/)
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 14.0.6.
 
