@@ -28,7 +28,6 @@
  
 <img src="img-document/img6.png" align="left" width="200" hspace="10" vspace="10"> 
 <br>
-
 <img src="img-document/img7.png" align="left" width="200" hspace="10" vspace="10">
 <br>
 <img src="img-document/img8.png" align="left" width="200" hspace="10" vspace="10">
@@ -45,7 +44,7 @@
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 Algums parametros de ação são necessarios para a execução
 ### 📋 Pré-requisitos
