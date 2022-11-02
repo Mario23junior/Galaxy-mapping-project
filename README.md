@@ -19,7 +19,7 @@
   </p>
 </div>
 
-## Screenshots
+## 📸 Screenshots
 
 <img src="img-document/img2.png" align="left" width="200" hspace="10" vspace="10">
  <img src="img-document/img3.png" align="left" width="200" hspace="10" vspace="10">
@@ -62,21 +62,21 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 - Baixe ou clone este repositório usando `git clone https://github.com/Mario23junior/Galaxy-mapping-project.git`;
 - Dentro do diretório, instale as dependências usando `npm install`.
 
-## Como executar
+## 👨‍💻 Como executar
 
 Execute `ng serve` para executar a versão de desenvolvimento. Depois acesse `http://localhost:4200/`.
 
-## Como compilar/construir
+## 👩‍🚀 Como compilar/construir
 
 Execute `ng build` para buildar o projeto. Para buildar a versão de produção adicione a flag `--prod`. Os arquivos serão armazenados do diretório `dist`.
  
 
-## Servidor de desenvolvimento
+## 🕺 Servidor de desenvolvimento
 
 Execute `ng serve` para um servidor dev. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
  
 
-## Mais ajuda
+## 🔭 Mais ajuda
 
 Para obter mais ajuda sobre a CLI Angular, use `ng help` ou confira a página [Visão Geral da CLI Angular e Referência de Comando](https://angular.io/cli).
 
