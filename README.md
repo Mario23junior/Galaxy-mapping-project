@@ -34,9 +34,7 @@
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
- 
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 Algums parametros de ação são necessarios para a execução
 ### 📋 Pré-requisitos
