@@ -84,7 +84,7 @@ Para obter mais ajuda sobre a CLI Angular, use `ng help` ou confira a página [V
 
 * [Typescript](https://www.typescriptlang.org/)
 * [NodeJs](https://nodejs.org/en/)
-* [NASA](https://solarsystem.nasa.gov/)
+* [Vscode](https://code.visualstudio.com/)
 
 ## 📄 Licença
 
