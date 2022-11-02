@@ -22,7 +22,7 @@ export class GalaryGalaxyComponent implements OnInit {
     this.galaxias$ = this.galaxiService.listAll()
       .pipe(
         catchError(error => {
-          this.onError('Não foi possivel encontrar galaxias, por favor volte mais tarde')
+          this.onError('Não foi possivel encontrar galaxias, por favor volte mais tarde.')
           return ([])
         })
       )
