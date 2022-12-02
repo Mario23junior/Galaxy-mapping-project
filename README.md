@@ -67,12 +67,12 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 
 Execute `ng serve` para executar a versão de desenvolvimento. Depois acesse `http://localhost:4200/`.
 
-## 👩‍🚀 Como compilar/construir
+## 👩‍🚀 Como compilar/construir.
 
 Execute `ng build` para buildar o projeto. Para buildar a versão de produção adicione a flag `--prod`. Os arquivos serão armazenados do diretório `dist`.
  
 
-## 🪅 Servidor de desenvolvimento
+## 🪅 Servidor de desenvolvimento.
 
 Execute `ng serve` para um servidor dev. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
  
